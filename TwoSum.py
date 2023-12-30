@@ -1,7 +1,7 @@
 # ---- Array ----
 
 '''
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Given an array of integer nums and an integer target, return indices of the two numbers such that they add up to the target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 Example 1:
@@ -22,9 +22,10 @@ def twoSum(nums, target):
                 print(a)
                 return a
 
+# ----- This is running solution passes every test case 
 def twoSum(nums, target):
     for cur in range(len(nums)): # this  will go with index number of list / array
-        for x in range(cur + 1, len(nums)): # ths will start fom index one / 1
+        for x in range(cur + 1, len(nums)): # ths will start from index one / 1
             if nums[x] == target - nums[cur]: 
                 print([cur, x])
                 return [cur, x]
